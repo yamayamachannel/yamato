@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>お名前:</strong>
+  <%= @memo.title %>
+</p>
+
+<p>
+  <strong>好きな食べ物:</strong>
+  <%= @memo.body %>
+</p>
+
+<%= link_to '編集', edit_memo_path(@memo) %> |
+<%= link_to '戻る', memos_path %>
